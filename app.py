@@ -34,7 +34,7 @@ st.title("あなたに寄り添うAIカウンセラー")
 st.image("AICouncellingBanner.jpg")
 st.write("どうしました？ 何かありましたか？ ")
 
-user_input = st.text_area("あなたの今の気持ちをできるだけ詳しく話してください。", key="user_input", height=100, on_change=communicate)
+user_input = st.text_area("あなたの今の気持ちを話してください。", key="user_input", height=100, on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
